@@ -11,4 +11,4 @@ if [ -n "$SSH_KEY" ]; then
 fi
 
 echo "[custom] launching original autossh entrypoint..."
-exec /entrypoint "$@"
+exec /entrypoint.sh "$@"
