@@ -1,5 +1,8 @@
 FROM jnovack/autossh:latest
 
+USER root
+RUN apk add --no-cache bash coreutils
+
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
